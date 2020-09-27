@@ -110,11 +110,10 @@ header {
 
 .article_container {
   width: 90%;
-  margin: 100px auto 0px;
+  margin: 0 auto;
   background: #f8f8ff;
-  position: relative;
-  margin-bottom: 100px;
-  padding-bottom: 10px;
+  margin: 100px auto;
+  padding-bottom: 1px;
 }
 
 article {
@@ -124,15 +123,36 @@ article {
 }
 
 .article_ul {
-  width: 70%;
   list-style: none;
-  padding: 0.5px 1px;
-  margin: 28px 0;
-  border: solid 2px #000000;
+  margin-left: 205px;
 }
 
 .article_title {
   font-size: 20px;
+}
+
+.article_link {
+  text-decoration: none;
+  color: #4b4b4b;
+}
+
+.article_image {
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+  margin: 5px;
+  position: absolute;
+  left: 0px;
+}
+
+.article_position {
+  box-sizing: content-box;
+  width: 70%;
+  padding: 0.5px 1px;
+  margin: 28px 0;
+  border: solid 2px #000000;
+  position: relative;
+  height: 200px;
 }
 
 /* body */
