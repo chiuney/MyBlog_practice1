@@ -1,6 +1,6 @@
 <header>
   <h1 class="header_title">
-  <a href="/" class="header_logo">My Blog</a>
+  <%= link_to "My Blog", "#", class: "header_logo" %>
   </h1>
   <nav class="header_nav">
     <ul class="header_ul">
@@ -8,5 +8,25 @@
       <li>自己紹介</li>
     </ul>
   </nav>
-  
+  <div>
+    <nav class="header_nav">
+      <ul class="header_ul">
+        <li>
+          <%= link_to "HTML", "#" %>
+        </li>
+        <li>
+          <%= link_to "CSS", "#" %>
+        </li>
+        <li>
+          <%= link_to "JavaScript", "#" %>
+        </li>
+        <li>
+        <%= link_to "Ruby", "#" %>
+        </li>
+        <li>
+        <%= link_to "Ruby on Rails", "#" %>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </header>
