@@ -8,7 +8,7 @@
       <li>
       <%= link_to post.title, post_path(post.id) %>
       <%= link_to "[EDIT]", edit_post_path(post.id) %>
-      <%= link_to "[DELETE]", "/posts/#{post.id}", method: :delete %>
+      <%= link_to "[DELETE]", "/posts/#{post.id}", method: :delete,data: { confirm: 'Are you sure?' } %>
       </li>
     </ul>
   <% end %>
