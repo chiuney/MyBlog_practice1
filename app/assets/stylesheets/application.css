@@ -131,6 +131,10 @@ article {
   border: solid 2px #000000;
 }
 
+.article_title {
+  font-size: 20px;
+}
+
 /* body */
 /* new, edit */
 
@@ -217,7 +221,7 @@ footer {
   padding: 20px 4% 0px;
   position: fixed;
   bottom: 0;
-  background: gray;
+  background: #d3d3d3;
 }
 
 .footer_logo {

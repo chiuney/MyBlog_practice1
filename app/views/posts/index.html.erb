@@ -4,7 +4,7 @@
     <section>
       <% @post.each do |post| %>
         <ul class="article_ul">
-          <li><%= link_to post.title, post_path(post.id),class: "form_link" %></li>
+          <li><%= link_to post.title, post_path(post.id),class: "form_link article_title" %></li>
           <li><%= link_to post.content, post_path(post.id),class: "form_link" %></li>
           <li>更新日時<%= post.updated_at.strftime('%Y/%m/%d %H:%M') %></li>
           <li>作成日時<%= post.created_at.strftime('%Y/%m/%d %H:%M') %></li>
