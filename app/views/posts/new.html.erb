@@ -1,21 +1,23 @@
-<h1>新規投稿</h1>
+<div class="form_container">
+  <h1 class="form_title">新規投稿</h1>
 
-  <%= form_with(model: @post, local: true) do |f| %>
-    <%= render 'shared/error_messages' %>
-
-    <p>
-      <%= f.label :title %><br>
-      <%= f.text_field :title, placeholder: "タイトル" %>
-    </p>
-    
-    <p>
-      <%= f.label :content %><br>
-      <%= f.text_area :content, placeholder: "内容" %>
-    </p>
-    
-    <p>
-      <%= f.submit %>
-    </p>
-
+  <%= form_with model: @post, local: true do |f| %>
+    <div class="form_p">
+      <p>
+        <%= f.label :title, "タイトル", class:"form_label"  %><br>
+        <%= f.text_field :title, class:"form" %>
+      </p>
+    </div>
+    <div>
+      <p>
+        <%= f.label :content, "本文", class:"form_label" %><br>
+        <%= f.text_area :content, class:"form form_area" %>
+      </p>
+    </div>
+    <div>
+      <p>
+        <%= f.submit '新規投稿', class:"btn" %>
+      </p>
+      </div>
   <% end %>
-
+</div>
