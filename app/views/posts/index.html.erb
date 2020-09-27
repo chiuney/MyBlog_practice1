@@ -1,11 +1,15 @@
 <h2>記事一覧</h2>
   
-  <% @post.each do |post| %>
-    <ul>
-      <li>
-      <%= link_to post.title, post_path(post.id) %>
-      <%= link_to "[EDIT]", edit_post_path(post.id) %>
-      <%= link_to "[DELETE]", "/posts/#{post.id}", method: :delete,data: { confirm: 'Are you sure?' } %>
-      </li>
-    </ul>
-  <% end %>
+<article>
+  <section>
+    <% @post.each do |post| %>
+      <ul>
+        <li><%= link_to post.title, post_path(post.id) %></li>
+        <li><%= link_to post.content, post_path(post.id) %></li>
+        </li><%= link_to "[EDIT]", edit_post_path(post.id) %>
+        <%= link_to "[DELETE]", "/posts/#{post.id}", method: :delete,data: { confirm: 'Are you sure?' } %></li>
+      </ul>
+    <% end %>
+  </section>
+</article>
+<p>なぜかこの行はフッターに埋もれて見えません。</p>

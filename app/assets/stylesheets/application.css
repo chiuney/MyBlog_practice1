@@ -110,9 +110,9 @@ footer {
   width: 100%;
   height: 100px; 
   padding: 20px 4% 0px;
-  position: absolute;
+  position: fixed;
   bottom: 0;
-  background: white;
+  background: gray;
 }
 
 .footer_logo {
