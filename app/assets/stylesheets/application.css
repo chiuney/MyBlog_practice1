@@ -138,8 +138,6 @@ article {
   width: 90%;
   margin: 100px auto;
   padding: 20px;
-  /* overflow: scroll;
-  height: 100vh; */
 }
 
 .form_title {
@@ -157,7 +155,6 @@ article {
 
 .form_area {
   height: 500px;
-  /* font-size: 1em; */
   line-height: 1.2;
 }
 .form_p {
@@ -178,6 +175,9 @@ article {
 .form_label {
   font-size: 28px;
 }
+
+/* body */
+/* show */
 
 /* footer */
 
