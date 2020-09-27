@@ -14,4 +14,20 @@
  *= require_self
  */
 
+ /* 全体 */
+
+ * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
  /* ヘッダー */
+
+ .header_nav {
+  list-style: none;
+}
