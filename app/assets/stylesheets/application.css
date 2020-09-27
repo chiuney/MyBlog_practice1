@@ -113,6 +113,8 @@ header {
   margin: 100px auto 0px;
   background: #f8f8ff;
   position: relative;
+  margin-bottom: 100px;
+  padding-bottom: 10px;
 }
 
 article {
@@ -138,7 +140,6 @@ article {
   width: 90%;
   margin: 100px auto;
   padding: 20px;
-  height: 100vh;
 }
 
 .form {
@@ -153,8 +154,6 @@ article {
 .form_area {
   height: 500px;
   line-height: 1.2;
-  /* white-space: pre-line; */
-  /* word-wrap: break-word; */
 }
 
 .form_p {
