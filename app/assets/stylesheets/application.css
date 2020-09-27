@@ -14,7 +14,7 @@
  *= require_self
  */
 
- /* 全体 */
+ /* all */
 
  * {
   box-sizing: border-box;
@@ -23,7 +23,7 @@
   font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
- /* ヘッダー */
+ /* header */
 
 header {
   width: 100%;
@@ -86,8 +86,6 @@ header {
 
 .category_link{
   display: block;
-  /* line-height: 50px; */
-  /* text-align: center; */
   background: #333;
   color: #fff;
   width: 180px;
@@ -102,7 +100,33 @@ header {
 }
 
 /* body */
+/* article */
 
+.article_container {
+  width: 90%;
+  margin: 0 auto;
+  background: #f8f8ff;
+  /* position: relative; */
+}
+
+article {
+  width: 86%;
+  margin: 0px 20px 10px;
+  padding-top: 16px;
+}
+
+.article_ul {
+  width: 70%;
+  list-style: none;
+  padding: 0.5px 1px;
+  margin: 28px 0;
+  border: solid 2px #000000;
+}
+
+.article_link {
+  text-decoration: none;
+  color: #4b4b4b;
+}
 
 /* footer */
 

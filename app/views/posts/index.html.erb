@@ -1,15 +1,17 @@
-<h2>記事一覧</h2>
-  
-<article>
-  <section>
-    <% @post.each do |post| %>
-      <ul>
-        <li><%= link_to post.title, post_path(post.id) %></li>
-        <li><%= link_to post.content, post_path(post.id) %></li>
-        </li><%= link_to "[EDIT]", edit_post_path(post.id) %>
-        <%= link_to "[DELETE]", "/posts/#{post.id}", method: :delete,data: { confirm: 'Are you sure?' } %></li>
-      </ul>
-    <% end %>
-  </section>
-</article>
-<p>なぜかこの行はフッターに埋もれて見えません。</p>
+<div class="article_container">
+  <article>
+    <h1>新着記事</h2>
+    <section class="article_section">
+      <% @post.each do |post| %>
+        <ul class="article_ul">
+          <li><%= link_to post.title, post_path(post.id),class: "article_link" %></li>
+          <li><%= link_to post.content, post_path(post.id),class: "article_link" %></li>
+          <li>更新日時<%= post.updated_at.strftime('%Y/%m/%d %H:%M') %></li>
+          <li>作成日時<%= post.created_at.strftime('%Y/%m/%d %H:%M') %></li>
+          </li><%= link_to "編集", edit_post_path(post.id),class: "article_link" %>
+          <%= link_to "削除", "/posts/#{post.id}", method: :delete,data: { confirm: 'Are you sure?' }, class: "article_link" %></li>
+        </ul>
+      <% end %>
+    </section>
+  </article>
+  </div>
