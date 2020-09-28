@@ -23,7 +23,7 @@
   font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.form_link .header_logo {
+.form_link {
   text-decoration: none;
   color: #4b4b4b;
 }
