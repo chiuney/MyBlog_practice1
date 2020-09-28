@@ -10,8 +10,6 @@
             <li><%= strip_tags(post.content.to_s).gsub(/[\n]/,"").strip.truncate(60) %></li>
             <li>更新日時<%= post.updated_at.strftime('%Y/%m/%d %H:%M') %></li>
             <li>作成日時<%= post.created_at.strftime('%Y/%m/%d %H:%M') %></li>
-            </li><%= link_to "編集", edit_post_path(post.id),class: "form_link" %>
-            <%= link_to "削除", "/posts/#{post.id}", method: :delete,data: { confirm: 'Are you sure?' }, class: "form_link" %></li>
           </div>
         </ul>
       <% end %>
