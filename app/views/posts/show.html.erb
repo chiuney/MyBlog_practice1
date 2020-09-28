@@ -8,8 +8,6 @@
     <p class="show_content show_text"><%= @post.content %></p>
   </div>
 
-  <p><%= link_to "編集", edit_post_path(@post), class: "form_link" %>
-  <%= link_to "削除", "/posts/#{@post.id}", method: :delete,data: { confirm: 'Are you sure?' }, class: "form_link" %></p>
   <p><%= link_to "ホーム画面に戻る", root_path, class: "form_link" %></p>
 
 </div>
