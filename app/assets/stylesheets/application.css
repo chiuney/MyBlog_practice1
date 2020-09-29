@@ -171,50 +171,6 @@ article {
 }
 
 /* body */
-/* new, edit */
-
-.form_container {
-  background:#f8f8ff;
-  text-align: center;
-  width: 90%;
-  margin: 100px auto;
-  padding: 20px;
-}
-
-.form {
-  width: 1000px;
-  border: 2px solid #4b4b4b; 
-  background-color: snow;
-  border-radius: 6px;
-  margin-top: 20px;
-  font-size: 20px;
-}
-
-.form_area {
-  height: 500px;
-  line-height: 1.2;
-}
-
-.form_p {
-  padding: 30px;
-}
-
-.btn {
-  appearance: none;
-  border: 0;
-  border-radius: 5px;
-  background: #4b4b4b;
-  color: #fff;
-  padding: 8px 16px;
-  font-size: 16px;
-  margin-top: 20px;
-}
-
-.form_label {
-  font-size: 28px;
-}
-
-/* body */
 /* show */
 
 .show_text {
