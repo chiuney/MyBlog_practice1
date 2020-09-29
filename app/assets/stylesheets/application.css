@@ -14,7 +14,7 @@
  *= require_self
  */
 
- /* all */
+ /* 共通設定 */
 
  * {
   box-sizing: border-box;
@@ -23,8 +23,9 @@
   font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+/* gemで下線の設定が上書きされるので強制指定 */
 a {
-    text-decoration: none !important;
+    text-decoration: none !important; 
 }
 
 .form_link {
@@ -32,11 +33,14 @@ a {
   color: #4b4b4b;
 }
 
+/* 〜480px：スマートフォン縦画面
+------------------------------ */
+
  /* header */
 
 header {
   width: 100%;
-  height: 100px;
+  height: 50px;
   background-color: white;
   position: fixed;
   top: 0;
@@ -71,11 +75,6 @@ header {
   display: flex;
   align-items: center;
   /* margin: 0 0 0 auto; */
-}
-
-.header_ul li {
-  margin: 0 0 0 15px;
-  font-size: 14px;
 }
 
 .header_ul li a{
@@ -315,11 +314,35 @@ footer {
   text-align: center;
 }
 
-@media (min-width: 768px) {
-  .header_mobile {
-    display: none;
+
+
+/* 480px〜599px：スマートフォン横画面
+------------------------------ */
+@media screen and (min-width:480px) and (max-width:599px) { 
+  
+
+
   }
-  .header_category {
-    display: block;
+  
+  /* 600px〜959px：タブレット
+  ------------------------------ */
+  @media screen and (min-width:600px) and (max-width:959px) {
+    .header_mobile {
+      display: none;
+    }
+    .header_category {
+      display: block;
+    }
   }
-}
+  
+  /* 960px〜1279px：小型PC
+  ------------------------------ */
+  @media screen and (min-width:960px) and (max-width:1279px) {
+  
+  }
+  
+  /* 1280px〜：大型PC
+  ------------------------------ */
+  @media screen and (min-width:1280px) {
+
+  }
