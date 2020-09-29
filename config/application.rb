@@ -16,5 +16,8 @@ module Myblog
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
     config.time_zone = 'Tokyo'
+
+    config.assets.paths << config.root.join("vendor/assets/javascripts")
+    config.assets.paths << config.root.join("vendor/assets/stylesheets")
   end
 end

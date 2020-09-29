@@ -23,16 +23,6 @@
   font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* gemで下線の設定が上書きされるので強制指定 */
-a {
-    text-decoration: none !important; 
-}
-
-.form_link {
-  text-decoration: none;
-  color: #4b4b4b;
-}
-
 /* 〜480px：スマートフォン縦画面
 ------------------------------ */
 
@@ -53,13 +43,8 @@ header {
   padding: 10px 4% 10px;
 }
  
-.header_title {
-  margin: 0;
-  padding: 0;
+.header_link {
   font-size: 20px;
-}
-
-.header_logo {
   text-decoration: none;
   color: #4b4b4b;
 }
@@ -92,7 +77,7 @@ header {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, 0%);
+  transform: translate(-50%, -50%);
   display: block;
   width: 100%;
   height: 2px;
