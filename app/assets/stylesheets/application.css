@@ -59,7 +59,6 @@ header {
   margin: 0px;
   display: flex;
   align-items: center;
-  /* margin: 0 0 0 auto; */
 }
 
 .header_ul li a{
@@ -253,20 +252,15 @@ article {
 
 footer {
   width: 100%;
-  height: 100px; 
+  height: 80px; 
   padding: 20px 4% 0px;
-  position: fixed;
-  bottom: 0;
+  /* position: fixed;
+  bottom: 0; */
   background: #d3d3d3;
 }
 
-.footer_logo {
-  text-decoration: none;
-  color: #4b4b4b;
-}
-
 .footer_container {
-  display: flex;
+  /* display: flex; */
   align-items: center;
 }
 
@@ -312,22 +306,48 @@ footer {
   /* 600px〜959px：タブレット
   ------------------------------ */
   @media screen and (min-width:600px) and (max-width:959px) {
+    
+    /* ヘッダー */
     .header_mobile {
       display: none;
     }
     .header_category {
       display: block;
     }
+    
+    /* フッター */
+
+    footer {
+      position: fixed;
+      bottom: 0;
+    }
+    
+    .footer_container {
+      display: flex;
+      align-items: center;
+    }
   }
   
   /* 960px〜1279px：小型PC
   ------------------------------ */
   @media screen and (min-width:960px) and (max-width:1279px) {
-  
+    .header_mobile {
+      display: none;
+    }
+
+    .header_category {
+      display: block;
+    }
   }
   
   /* 1280px〜：大型PC
   ------------------------------ */
   @media screen and (min-width:1280px) {
+    .header_mobile {
+      display: none;
+    }
 
+    .header_category {
+      display: block;
+    }
   }
